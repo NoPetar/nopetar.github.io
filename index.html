@@ -3,86 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive GitHub Pages Site</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <title>Interactive 3D Circle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Interactive GitHub Page</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="name">Petar Kozomora</div>
+    <p class="description">I try to code.</p>
     
-    <section class="content">
-        <h2>Click the button for a surprise!</h2>
-        <button id="surpriseBtn">Click Me</button>
-        <p id="message"></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 My GitHub Page</p>
-    </footer>
+    <div class="cv">
+        <h3>About Me:</h3>
+        <p>As a young developer, I enjoy working on game development, web technologies, and experimenting with new programming languages. I'm constantly learning and pushing the boundaries of what I can create.</p>
+        
+        <h3>Skills:</h3>
+        <div class="skills-container">
+            <div class="skills-strip" id="skills-strip">
+                <!-- Logos to be continuously scrolled -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" class="skill-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" class="skill-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/C_Sharp_Logo_2023.svg" alt="C# Logo" class="skill-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C Logo" class="skill-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo" class="skill-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Official_CSS_Logo.svg" alt="CSS Logo" class="skill-logo">
+                <img src="https://static.djangoproject.com/img/logos/django-logo-negative.svg" alt="Django Logo" class="skill-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Sql_data_base_with_logo.svg" alt="SQL Logo" class="skill-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" alt="SQLite Logo" class="skill-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Official_unity_logo.png" alt="Unity Logo" class="skill-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" class="skill-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" class="skill-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/C_Sharp_Logo_2023.svg" alt="C# Logo" class="skill-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C Logo" class="skill-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo" class="skill-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Official_CSS_Logo.svg" alt="CSS Logo" class="skill-logo">
+                <img src="https://static.djangoproject.com/img/logos/django-logo-negative.svg" alt="Django Logo" class="skill-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Sql_data_base_with_logo.svg" alt="SQL Logo" class="skill-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" alt="SQLite Logo" class="skill-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Official_unity_logo.png" alt="Unity Logo" class="skill-logo">
+                
+            </div>
+        </div>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #add8e6;
-            color: #333;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #87CEEB;
-            padding: 20px;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-        .content {
-            margin: 50px;
-        }
-        button {
-            background-color: #4682B4;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            font-size: 18px;
-            cursor: pointer;
-            transition: transform 0.2s ease-in-out;
-        }
-        button:hover {
-            transform: scale(1.1);
-        }
-        footer {
-            margin-top: 50px;
-            background-color: #4682B4;
-            color: white;
-            padding: 15px;
-        }
-    </style>
-    
-    <script>
-        document.getElementById("surpriseBtn").addEventListener("click", function() {
-            document.getElementById("message").innerText = "Surprise! You clicked the button!";
-        });
-    </script>
+        
+    </div>
+
+    <div class="container">
+        <div class="circle"></div>
+    </div>
+    <script src="app.js"></script>
+
 </body>
 </html>
 
