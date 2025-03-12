@@ -1,37 +1,43 @@
-const circle = document.querySelector('.circle');
-        const skillsStrip = document.getElementById('skills-strip');
-        const skillLogos = document.querySelectorAll('.skill-logo');
+const light = document.getElementById('light');
 
-        document.addEventListener('mousemove', (event) => {
-            const mouseX = event.clientX;
-            const mouseY = event.clientY;
-            const circleRect = circle.getBoundingClientRect();
-            
-            const circleCenterX = circleRect.left + circleRect.width / 2;
-            const circleCenterY = circleRect.top + circleRect.height / 2;
+document.addEventListener('mousemove', (e) => {
+    requestAnimationFrame(() => {
+        const lightSize = 500;  // The size of the light effect
+        // The light will be centered based on mouse position
+        light.style.left = `${e.clientX - lightSize / 2}px`;
+        light.style.top = `${e.clientY - lightSize / 2}px`;
+    });
+});
 
-            const deltaX = (mouseX - circleCenterX) * 0.1; // Controls how much the circle moves
-            const deltaY = (mouseY - circleCenterY) * 0.1;
+// === Smooth Hover Effects for Sections ===
+const nameElement = document.querySelector('.name');
+const descriptionElement = document.querySelector('.description');
+const cvElement = document.querySelector('.cv');
 
-            // Apply 3D effect and move the circle
-            circle.style.transform = `translate3d(${deltaX}px, ${deltaY}px, 0) rotateX(${deltaY}deg) rotateY(${deltaX}deg)`;
-        });
+nameElement.addEventListener('mouseover', () => {
+    nameElement.style.transform = 'scale(1.1)';
+    nameElement.style.textShadow = '0 0 30px rgba(0, 191, 255, 1)';
+});
 
-        // Function to reset the position of the strip for seamless scrolling
-        const resetStrip = () => {
-            const firstLogo = skillLogos[0];
-            const lastLogo = skillLogos[skillLogos.length - 1];
-            
-            const firstLogoPosition = firstLogo.getBoundingClientRect();
-            const lastLogoPosition = lastLogo.getBoundingClientRect();
+nameElement.addEventListener('mouseout', () => {
+    nameElement.style.transform = 'scale(1)';
+    nameElement.style.textShadow = '0 0 15px rgba(0, 191, 255, 0.8)';
+});
 
-            if (lastLogoPosition.right <= 0) {
-                skillsStrip.appendChild(firstLogo);
-            }
+descriptionElement.addEventListener('mouseover', () => {
+    descriptionElement.style.color = '#00bfff';
+});
 
-            if (firstLogoPosition.left >= window.innerWidth) {
-                skillsStrip.prepend(lastLogo);
-            }
-        };
+descriptionElement.addEventListener('mouseout', () => {
+    descriptionElement.style.color = '#ccc';
+});
 
-        setInterval(resetStrip, 10);
+cvElement.addEventListener('mouseover', () => {
+    cvElement.style.transform = 'translateY(-5px)';
+    cvElement.style.boxShadow = '0 8px 40px rgba(0, 191, 255, 0.6)';
+});
+
+cvElement.addEventListener('mouseout', () => {
+    cvElement.style.transform = 'translateY(0)';
+    cvElement.style.boxShadow = '0 4px 20px rgba(0, 191, 255, 0.3)';
+});

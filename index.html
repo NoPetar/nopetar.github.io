@@ -3,55 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This is me!</title>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    
+    <title>Petar Kozomora - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="name">Petar Kozomora</div>
-    <p class="description">I try to code.</p>
-    
-    <div class="cv">
-        <h3>About Me:</h3>
-        <p>As a young developer, I enjoy working on game development, web technologies, and experimenting with new programming languages. I'm constantly learning and pushing the boundaries of what I can create.</p>
-        
-        <h3>Skills:</h3>
-        <div class="skills-container">
-            <div class="skills-strip" id="skills-strip">
-                <!-- Logos to be continuously scrolled -->
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" class="skill-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" class="skill-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/C_Sharp_Logo_2023.svg" alt="C# Logo" class="skill-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C Logo" class="skill-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo" class="skill-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Official_CSS_Logo.svg" alt="CSS Logo" class="skill-logo">
-                <img src="https://static.djangoproject.com/img/logos/django-logo-negative.svg" alt="Django Logo" class="skill-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Sql_data_base_with_logo.svg" alt="SQL Logo" class="skill-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" alt="SQLite Logo" class="skill-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Official_unity_logo.png" alt="Unity Logo" class="skill-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" class="skill-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" class="skill-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/C_Sharp_Logo_2023.svg" alt="C# Logo" class="skill-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C Logo" class="skill-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo" class="skill-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Official_CSS_Logo.svg" alt="CSS Logo" class="skill-logo">
-                <img src="https://static.djangoproject.com/img/logos/django-logo-negative.svg" alt="Django Logo" class="skill-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Sql_data_base_with_logo.svg" alt="SQL Logo" class="skill-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" alt="SQLite Logo" class="skill-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Official_unity_logo.png" alt="Unity Logo" class="skill-logo">
-                
-            </div>
+    <!-- Dynamic Lighting Effect -->
+    <div class="light-effect" id="light"></div>
+
+    <!-- Header Section -->
+    <header>
+        <h1 class="name">Petar Kozomora</h1>
+        <p class="description">Aspiring developer with a passion for programming and game development.</p>
+    </header>
+
+    <!-- CV Section -->
+    <section class="cv">
+        <h3>About Me</h3>
+        <p>I specialize in software development, game design, and web technologies. My expertise includes backend development, database management, and interactive applications.</p>
+    </section>
+
+    <!-- Skills Animation -->
+    <section class="skills-container">
+        <div class="skills-strip" id="skillsStrip">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" class="skill-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" class="skill-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/C_Sharp_Logo_2023.svg" alt="C# Logo" class="skill-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C Logo" class="skill-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo" class="skill-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Official_CSS_Logo.svg" alt="CSS Logo" class="skill-logo">
+            <img src="https://static.djangoproject.com/img/logos/django-logo-negative.svg" alt="Django Logo" class="skill-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Sql_data_base_with_logo.svg" alt="SQL Logo" class="skill-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" alt="SQLite Logo" class="skill-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Official_unity_logo.png" alt="Unity Logo" class="skill-logo">
         </div>
+    </section>
 
-        
-    </div>
-
-    <div class="container">
-        <div class="circle"></div>
-    </div>
-    <script src="app.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
-
