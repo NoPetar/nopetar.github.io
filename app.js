@@ -41,3 +41,22 @@ cvElement.addEventListener('mouseout', () => {
     cvElement.style.transform = 'translateY(0)';
     cvElement.style.boxShadow = '0 4px 20px rgba(0, 191, 255, 0.3)';
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const projects = document.querySelectorAll(".project");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = "translateY(0)";
+            }
+        });
+    }, { threshold: 0.2 });
+
+    projects.forEach(project => {
+        project.style.opacity = 0;
+        project.style.transform = "translateY(20px)";
+        observer.observe(project);
+    });
+});
