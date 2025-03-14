@@ -98,6 +98,7 @@ body {
     display: flex;
     gap: 40px;
     animation: scrollLogos 25s linear infinite;
+    
 }
 
 .skill-logo {
@@ -176,4 +177,24 @@ body {
 .langs-used{
     margin-top: 1em;
     color: #00bfff;
+}
+.view-more{
+    color : #00bfff;
+    text-decoration: none;
+    text-shadow: 0 0 15px rgba(0, 191, 255, 0.8);
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    max-width: 60%;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-shadow: 0 0 15px rgba(0, 191, 255, 0.8);
+}
+.view-more:hover{
+    font-size: 1.3rem;
+}
+hr{
+    border: rgba(0, 191, 255, 0.8) dashed 1.1px
 }

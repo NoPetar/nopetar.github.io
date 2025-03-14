@@ -4,8 +4,8 @@ document.addEventListener('mousemove', (e) => {
     requestAnimationFrame(() => {
         const lightSize = 500;  // The size of the light effect
         // The light will be centered based on mouse position
-        light.style.left = `${e.clientX - lightSize / 2}px`;
-        light.style.top = `${e.clientY - lightSize / 2}px`;
+        light.style.left = `${e.clientX - lightSize / 2 + 275}px`;
+        light.style.top = `${e.clientY - lightSize / 2 + 250}px`;
     });
 });
 
