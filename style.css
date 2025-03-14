@@ -39,6 +39,19 @@ body {
     transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
+.link{
+    font-weight: 700;
+    color: #00bfff;
+    text-shadow: 0 0 15px rgba(0, 191, 255, 0.8);
+    margin-top: 20px;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.link:hover{
+    text-shadow: 0 0 30px rgba(0, 191, 255, 1);
+    transform: scale(1.1);
+}
 .name:hover {
     transform: scale(1.1);
     text-shadow: 0 0 30px rgba(0, 191, 255, 1);
@@ -197,4 +210,57 @@ body {
 }
 hr{
     border: rgba(0, 191, 255, 0.8) dashed 1.1px
+}
+#projects-page{
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    max-width: 60%;
+    background-color: rgba(45, 45, 45, 0.7);
+    padding: 25px;
+    border-radius: 5rem;
+    box-shadow: 0 4px 20px rgba(0, 191, 255, 0.3);
+    backdrop-filter: blur(10px);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-shadow: 0 0 15px rgba(0, 191, 255, 0.8);
+    width: 80%;
+    margin-top: 3rem;
+}
+.p-title-page{
+    margin-top: 3rem;
+    color: #00bfff;
+    font-size: 800%;
+    text-shadow: 0 0 15px rgba(0, 191, 255, 0.8);
+}
+
+.project-2 {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 191, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+    width: 75%;
+    height: 10rem;
+    align-content: center;
+}
+.project-2:hover {
+    transform: translateY(-10px);
+}
+
+.project-2 a, p,h3{
+    color : #ddd;
+    text-decoration: none;
+}
+.proj-title, h3{
+    font-size: 2rem
+}
+.proj-desc{
+    font-size: 1.2rem
+}
+.lang-used{
+    width: 3%;
+}
+.lang-used:hover{
+    transform: scale(1.55);
 }

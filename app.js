@@ -14,6 +14,7 @@ const nameElement = document.querySelector('.name');
 const descriptionElement = document.querySelector('.description');
 const cvElement = document.querySelector('.cv');
 
+
 nameElement.addEventListener('mouseover', () => {
     nameElement.style.transform = 'scale(1.1)';
     nameElement.style.textShadow = '0 0 30px rgba(0, 191, 255, 1)';
@@ -23,6 +24,8 @@ nameElement.addEventListener('mouseout', () => {
     nameElement.style.transform = 'scale(1)';
     nameElement.style.textShadow = '0 0 15px rgba(0, 191, 255, 0.8)';
 });
+
+
 
 descriptionElement.addEventListener('mouseover', () => {
     descriptionElement.style.color = '#00bfff';
